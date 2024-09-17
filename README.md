@@ -5,7 +5,7 @@
 # Skibidi ohio rizz
 
 použité obrázky:
-[Zlato]([https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRtCbeyZC6PjgiaDttQFYo4r4TUHIJFCdumA&s](https://img.freepik.com/premium-vector/seamless-gold-metal-texture_547648-4784.jpg)
+[Zlato](https://img.freepik.com/premium-vector/seamless-gold-metal-texture_547648-4784.jpg)
 [Kočička 1](https://storage.googleapis.com/pod_public/1300/146525.jpg)
 [Kočička 2](https://storage.googleapis.com/pod_public/1300/148743.jpg)
 [Kočička 3](https://ih1.redbubble.net/image.4777429809.0751/flat,750x,075,f-pad,750x1000,f8f8f8.jpg)
