@@ -2,8 +2,6 @@
 
 ## Leonův repozitář
 
-# Skibidi ohio rizz
-
 použité obrázky:
 [Zlato](https://img.freepik.com/premium-vector/seamless-gold-metal-texture_547648-4784.jpg)
 [Kočička 1](https://storage.googleapis.com/pod_public/1300/146525.jpg)
