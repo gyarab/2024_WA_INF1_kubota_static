@@ -1,9 +1,9 @@
 body {
-    text-align: center;
     color: white;
-    background-image: url("https://static.planetminecraft.com/files/image/minecraft/texture-pack/2023/067/16690534-pack_xl.webp");
-    background-repeat: repeat;
-    background-size: 100px 100px;
+    padding-left: 40px;
+    background: rgb(136,205,255);
+    background: linear-gradient(90deg, rgba(136,205,255,1) 8%, rgba(59,99,170,1) 62%, rgba(0,52,92,1) 100%);
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 ul {
@@ -19,6 +19,44 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 }
+
+.special {
+    color: red;
+    text-decoration:underline;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#rainbow {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+
+p {
+    line-height: 0.9;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: red;
+    border-style:dashed;
+}
+
+#p1 {
+    transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+    /*Staženo odněkud*/
+}
+  
 a:visited {
     color: yellow;
     background-color: blue;
@@ -45,4 +83,15 @@ a:hover {
 }
 .frac span.symbol {
     display: none;
+}
+
+#fakelink {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#fakelink:hover {
+    color: orange;
+    text-decoration: underline;
 }
