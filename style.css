@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    color: white;
+    background-image: url("https://static.planetminecraft.com/files/image/minecraft/texture-pack/2023/067/16690534-pack_xl.webp");
+    background-repeat: repeat;
+    background-size: 100px 100px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+a:link {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: yellow;
+    background-color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid white;
+}
+.frac span.symbol {
+    display: none;
+}
