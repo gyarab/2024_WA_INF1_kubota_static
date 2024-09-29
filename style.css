@@ -6,6 +6,38 @@ body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+.bgimagewood{
+    display: inline;
+    background-image: url("https://img.freepik.com/free-vector/realistic-wood-texture-background_23-2149221129.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    /*tohle jsem našel na stránce https://www.geeksforgeeks.org/how-to-add-image-in-text-background-using-html-and-css/ */
+}
+
+.bgimagefire{
+    display: inline;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5HzuPInF4tbnFB8ViRYacGhdfnz24PpEfg&s");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    /*tohle jsem našel na stránce https://www.geeksforgeeks.org/how-to-add-image-in-text-background-using-html-and-css/ */
+}
+
+div p {
+    color: brown;
+}
+
+#polopruhledna {
+    opacity: 0.5;
+}
+
 ul {
     padding: 0;
     list-style: none;
@@ -23,6 +55,7 @@ a:link {
 .special {
     color: red;
     text-decoration:underline;
+    text-shadow: 4px 4px yellowgreen;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -94,4 +127,5 @@ a:hover {
 #fakelink:hover {
     color: orange;
     text-decoration: underline;
+    cursor: pointer;
 }
