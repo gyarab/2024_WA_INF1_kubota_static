@@ -15,6 +15,7 @@ body {
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
+    text-transform: uppercase;
     /*tohle jsem našel na stránce https://www.geeksforgeeks.org/how-to-add-image-in-text-background-using-html-and-css/ */
 }
 
@@ -27,6 +28,7 @@ body {
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
+    text-transform: uppercase;
     /*tohle jsem našel na stránce https://www.geeksforgeeks.org/how-to-add-image-in-text-background-using-html-and-css/ */
 }
 
@@ -78,6 +80,10 @@ p {
     padding-left: 80px;
     color: red;
     border-style:dashed;
+}
+
+#odstavce {
+    text-indent: 5%;
 }
 
 #p1 {
