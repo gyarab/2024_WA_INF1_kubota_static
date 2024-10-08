@@ -74,15 +74,15 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
     color: red;
     border-style:dashed;
 }
 
-#odstavce {
+.odstavce {
     text-indent: 5%;
 }
 
@@ -153,7 +153,7 @@ a:hover {
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: none;
+    background-color: transparent;
 }
 
 .flex-container > div {
@@ -164,4 +164,88 @@ a:hover {
     color: yellow;
     text-align: center;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: transparent;
+    }
+    
+    .flex-container > div {
+        background-color: #000000;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5HzuPInF4tbnFB8ViRYacGhdfnz24PpEfg&s");
+        width: 50px;
+        margin: 5px;
+        color: yellow;
+        text-align: center;
+        font-weight: bolder;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: transparent;
+    }
+    
+    .flex-container > div {
+        background-color: #000000;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5HzuPInF4tbnFB8ViRYacGhdfnz24PpEfg&s");
+        width: 75px;
+        margin: 8px;
+        color: yellow;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        padding: 8px;
+    }
+    
+    .grid-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
 }
