@@ -36,8 +36,32 @@ div p {
     color: brown;
 }
 
-#polopruhledna {
+#positioning{
+    position: relative;
+}
+
+.kocka {
+    position: absolute;
+}
+
+.kocka1 {
+    z-index: -1;
+}
+
+.kocka2 {
+    left: 30%;
+    z-index: 70;
+}
+
+.kocka3 {
     opacity: 0.5;
+    left: 40%;
+    z-index: 80;
+}
+
+.kocka4 {
+    left: 50%;
+    z-index: 90;
 }
 
 ul {
@@ -154,6 +178,11 @@ a:hover {
     display: flex;
     flex-wrap: nowrap;
     background-color: transparent;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    right: 0;
+    justify-content: right;
 }
 
 .flex-container > div {
