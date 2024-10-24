@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <link rel="stylesheet" href="alt.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- měnič vzhledu-->
-    <script>
-        function zmenaVzhledu() {
-            var vzhled = document.getElementsByTagName("link")[0];
-            if (vzhled.getAttribute("href") == "style.css") {
-                vzhled.setAttribute("href", "alt.css");
-            } else {
-                vzhled.setAttribute("href", "style.css");
-            }
-        }
-    </script>
+    <script src="main.js"></script>
 </head>
+
 <body>
     <div class="flex-container">
         <div><a href="index.html">Nejlepší stránka světa</a></div>
@@ -33,7 +24,7 @@
     <h5>H5</h5>
     <h6>kolik je těch nadpisů :&lpar;</h6>
 
-    <button onclick="zmenaVzhledu()">TLAČÍTKO KRÁSY</button>
+    <button onclick="zmenaVzhledu()" id="baseButton">TLAČÍTKO KRÁSY</button>
 
     <h1 class="special">Dřevěný text</h1>
     <p class="bgimagewood">
@@ -85,6 +76,34 @@
          Vytvořím také několik pracovních listů, které mohou učitelé zadat za domácí úkol či je použít jako písemku.
     
     </p>
+
+    <h1 class="special">SVG</h1>
+    <p>Beziérova křivka</p>
+    <svg height="600" width="600">
+        <defs>
+            <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+                <stop offset="0%" stop-color="blue"/>
+                <stop offset="100%" stop-color="red"/>
+            </linearGradient>
+        </defs>
+        
+        <path d="M 50 50 Q 200 400 500 450 L 500 553 L 50 553 L 50 550 L 500 550 Q 200 500 50 300 L 50 50" stroke="url(#grad1)" stroke-width="4" fill="none"/> 
+        browser nemá podporu SVG.
+
+        <g font-size="30" font-family="sans-serif" fill="blue" text-anchor="middle">
+            <text x="50" y="561.5" dx="-30">0</text>
+            
+            <text x="50" y="310" dx="-30">2</text>
+            <text x="50" y="50" dx="-30">3</text>
+            
+        </g>
+
+        <g font-size="30" font-family="sans-serif" fill="red" text-anchor="middle">
+            <text x="500" y="561.5" dx="30">1</text>
+            <text x="500" y="455" dx="30">4</text>
+        </g>
+
+        </svg> 
 
     <h1>Types of SKIBIDI TOILET</h1>
     <ol>
@@ -205,16 +224,29 @@
         <div class="grid-item">Heslo</div>  
         <div class="grid-item">Leon999</div>
         <div class="grid-item">leon.kubota@student.gyarab.cz</div>
-        <div class="grid-item">●●●●●●●●●●●</div>  
+        <div class="grid-item" id="leonheslo">●●●●●●●●●●●●●●●</div>  
         <div class="grid-item">Gru</div>
         <div class="grid-item">villan.gru@illumination.com</div>
-        <div class="grid-item">●●●●</div>
+        <div class="grid-item" id="gruheslo">●●●●</div>
         <div class="grid-item">Ton_Roosendaal</div>
         <div class="grid-item">ton.roosendaal@blender.com</div>
-        <div class="grid-item">●●●●●●●●●●●●●●●●</div>  
+        <div class="grid-item" id="tonheslo">●●●●●●●●●●●●●●●</div>  
         <div class="grid-item">JA_Komensky_1592</div>
         <div class="grid-item">skola.hrou@seznam.cz</div>
-        <div class="grid-item">●●●●●●●●●●●●●</div> 
-      </div>
+        <div class="grid-item" id="komenskyheslo">●●●●●●●●●●●●●</div> 
+    </div>
+    <button type="button" onclick="showPasswords();">Show Passwords</button>
+
+    <h1 class="special">JAVASCRIPT</h1>
+
+    <p>Tlačítka mění proměnnou <i>count</i>, po stisknutí tlačítka <i>Print count</i> se vypíše do nového divu.</p>
+    <button type="button" onclick="plus();">+</button>
+    <button type="button" onclick="minus();">-</button>
+    <p></p>
+
+    <button id="test" type="button" onclick="novy();">Print count</button>
+    <div id="mainElement"></div>
+
+   
 </body>
 </html>
